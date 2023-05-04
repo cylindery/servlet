@@ -23,7 +23,7 @@ public class SpringMemberSaveControllerV1 {
         Member member = new Member(username, age);
         memberRepository.save(member);
 
-        ModelAndView mv = new ModelAndView("/save-result");
+        ModelAndView mv = new ModelAndView("save-result");
         mv.addObject("member", member);
 
         return mv;

@@ -17,7 +17,7 @@ public class SpringMemberListControllerV1 {
     public ModelAndView process() {
         List<Member> members = memberRepository.findAll();
 
-        ModelAndView mv = new ModelAndView("/members");
+        ModelAndView mv = new ModelAndView("members");
         mv.addObject("members", members);
 
         return mv;
